@@ -5,6 +5,7 @@ Import Google Font
 body {
   font-family: "Noto Sans TC", sans-serif;
   margin: 2%;
+  background-color: rgb(216, 212, 212);
 }
 /*------------
  Header style 
@@ -59,4 +60,36 @@ body {
   border-radius: 5px;
   padding: 5px;
   background-image: linear-gradient(red, tomato);
+}
+/*-----------------
+ Main Part Style 
+ ----------------*/
+/* Players Style */
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  align-items: center;
+}
+.container-player {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.players {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5%;
+  background-color: white;
+  justify-content: space-between;
+}
+.player-img img {
+  width: 280px;
+  height: 250px;
+}
+.player-info p {
+  color: rgb(69, 109, 96);
 }
