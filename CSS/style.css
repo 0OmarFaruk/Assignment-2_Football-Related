@@ -1,0 +1,62 @@
+/*-----------------
+Import Google Font
+-------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 2%;
+}
+/*------------
+ Header style 
+ ------------*/
+/* Menu_Style */
+.cover {
+  background-color: blue;
+  padding: 40px;
+}
+.cover-child {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.menu {
+  /* padding-top: 40px; */
+  display: flex;
+  justify-content: space-between;
+}
+.menu-name a {
+  color: white;
+  text-decoration: none;
+  padding-right: 40px;
+}
+.login a {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-image: linear-gradient(red, tomato);
+}
+/* Heading-Name_Style  */
+.web-heading {
+  display: flex;
+  align-items: center;
+}
+.cover-intro img {
+  width: 100%;
+  height: 90%;
+}
+.cover-intro img:hover {
+  transform: rotate(360deg);
+  transition: transform 5s ease 1s;
+}
+.cover-intro h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 1000;
+}
+.cover-intro a {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-image: linear-gradient(red, tomato);
+}
