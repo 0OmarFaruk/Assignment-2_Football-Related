@@ -85,6 +85,7 @@ main {
   padding: 5%;
   background-color: white;
   justify-content: space-between;
+  box-shadow: 5px 5px 5px 5px rgb(211, 192, 192);
 }
 .player-img img {
   width: 280px;
@@ -92,4 +93,61 @@ main {
 }
 .player-info p {
   color: rgb(69, 109, 96);
+}
+/* -----------------
+Optional PArt Style 
+-------------------*/
+.container-optional {
+  margin: 40px;
+  display: flex;
+}
+.optional {
+  margin: 100px;
+}
+.optional h1 {
+  font-size: 60px;
+}
+.optional a {
+  color: rgb(248, 247, 247);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-image: linear-gradient(red, tomato);
+}
+.optional a:hover {
+  background-image: linear-gradient(rgb(1, 1, 75), rgb(14, 77, 88));
+}
+.optional img {
+  width: 530px;
+  height: 450px;
+  justify-content: space-between;
+}
+/*-------------
+ Last-Section
+ ------------ */
+.last-part img {
+  width: 400px;
+}
+.icon i {
+  font-size: 30px;
+  margin-left: 35px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+footer {
+  margin-left: 90px;
+  margin-top: 25px;
+}
+/* ------------
+Media-Quary
+------------ */
+
+/* Mobile Device  */
+@media only screen and (max-width: 668px) {
+  body {
+    width: 100%;
+  }
+  .cover-child {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
