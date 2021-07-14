@@ -71,7 +71,7 @@ main {
   padding-top: 80px;
   align-items: center;
 }
-.container-player {
+.player-details {
   display: grid;
   width: 1000px;
   grid-template-columns: repeat(3, 1fr);
@@ -97,7 +97,7 @@ main {
 /* -----------------
 Optional PArt Style 
 -------------------*/
-.container-optional {
+.optional-details {
   margin: 40px;
   display: flex;
 }
@@ -144,10 +144,39 @@ Media-Quary
 
 /* Mobile Device  */
 @media only screen and (max-width: 668px) {
-  body {
+  .cover,
+  .container-player,
+  .container-optional {
     width: 100%;
   }
-  .cover-child {
+  .cover-child,
+  .player-details,
+  .container-optional {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .web-heading,
+  .menu,
+  .players,
+  .optional-details {
+    flex-direction: column;
+  }
+}
+/* For Tablet */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .cover,
+  .container-player,
+  .container-optional {
+    width: 100%;
+  }
+  .cover-child,
+  .player-details,
+  .container-optional {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .web-heading,
+  .menu,
+  .players,
+  .optional-details {
+    flex-direction: column;
   }
 }
